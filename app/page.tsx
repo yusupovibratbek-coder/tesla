@@ -1,9 +1,12 @@
 import Link from "next/link";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
 
 export default function Home() {
     return (
-        <div>
+        <div className="bg-white min-h-screen">
+
             <div>
                 <Navbar />
             </div>
@@ -20,8 +23,12 @@ export default function Home() {
                         <Link href={'/'}><h1 className="bg-gray-100 hover:bg-gray-300 w-50 font-bold text-center text-gray-800 rounded-lg p-2">Learn More</h1></Link>
                     </div>
                 </div>
-
             </div>
+
+          <div>
+            <Hero/>
+          </div>
+
         </div>
     )
 }
