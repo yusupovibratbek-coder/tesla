@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Models from "./components/Models";
 
 
 export default function Home() {
     return (
-        <div className="bg-white min-h-screen">
+        <div className="bg-white min-h-screen h-full">
 
             <div>
                 <Navbar />
@@ -25,9 +26,40 @@ export default function Home() {
                 </div>
             </div>
 
-          <div>
-            <Hero/>
-          </div>
+            <div>
+                <Hero />
+            </div>
+
+            <div>
+                <Models />
+            </div>
+
+            <div className="flex gap-4 pl-5 pt-10">
+                <div className=" bg-gray-200 flex w-150 items-center rounded-lg pb-5 pl-3">
+                    <div>
+                        <h1 className="text-3xl font-bold font-mono text-black pl-4 pt-4">Current Offers</h1>
+                        <h1 className="text-xl text-gray-500 font-mono pl-4 w-100 pt-2">Explore limited-time offers on Tesla vehicles.</h1>
+                        <div className="pl-4 pt-5">
+                            <button className="bg-white hover:bg-black hover:text-white text-black font-bold w-40 pl-4 text-center  p-2 rounded-lg">Order Now</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img className="w-40" src="https://pngpix.com/images/hd/transparent-tesla-cybertruck-model-png-tub62-sdd34yxabclq7ebt.jpg" alt="" />
+                    </div>
+                </div>
+                <div className="bg-gray-200 flex items-center w-150 rounded-lg">
+                    <div>
+                        <h1 className="text-3xl font-bold font-mono text-black pl-4 pt-4">Current Offers</h1>
+                        <h1 className="text-xl text-gray-500 font-mono pl-4 w-100 pt-2">Explore limited-time offers on Tesla vehicles.</h1>
+                        <div className="pl-4 pt-5">
+                            <button className="bg-white hover:bg-black hover:text-white text-black font-bold w-40 pl-4 text-center  p-2 rounded-lg">Order Now</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img className="w-40" src="https://platform.cstatic-images.com/in/v2/stock_photos/34be582e-bdd2-407e-8abc-13da0e2e7a91/9bc22f7d-f015-435e-8494-3fbd0d862af3.png" alt="" />
+                    </div>
+                </div>
+            </div>
 
         </div>
     )
