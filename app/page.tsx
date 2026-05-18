@@ -34,7 +34,7 @@ export default function Home() {
                 <Models />
             </div>
 
-            <div className="flex gap-4 pl-5 pt-10">
+            <div className="flex gap-4 pl-5 pt-10 pb-10">
                 <div className=" bg-gray-200 flex w-150 items-center rounded-lg pb-5 pl-3">
                     <div>
                         <h1 className="text-3xl font-bold font-mono text-black pl-4 pt-4">Current Offers</h1>
