@@ -5,14 +5,14 @@ export default function Navbar() {
         <div className="h-12 bg-white shadow-md">
             <div className="flex justify-around">
                 <div className="items-center p-2 pl-10">
-                    <h1 className="text-black font-bold font-serif text-2xl ">T E S L A</h1>
+                    <Link href={'/'}><h1 className="text-black font-bold font-serif text-2xl ">T E S L A</h1></Link>
                 </div>
                 <div className="flex bg-white gap-10 text-black font-bold font-mono items-center ">
-                    <Link className="bg-white hover:bg-gray-200 w-25 p-1 text-center rounded-lg" href={'/'}>Vehicles</Link>
-                    <Link className="bg-white hover:bg-gray-200 w-20 p-1 text-center rounded-lg" href={'/'}>Energy</Link>
-                    <Link className="bg-white hover:bg-gray-200 w-25 p-1 text-center rounded-lg" href={'/'}>Charging</Link>
-                    <Link className="bg-white hover:bg-gray-200 w-25 p-1 text-center rounded-lg" href={'/'}>Discover</Link>
-                    <Link className="bg-white hover:bg-gray-200 w-18 p-1 text-center rounded-lg" href={'/'}>Shop</Link>
+                    <Link className="bg-white hover:bg-gray-200 w-25 p-1 text-center rounded-lg" href={'/vehicles'}>Vehicles</Link>
+                    <Link className="bg-white hover:bg-gray-200 w-20 p-1 text-center rounded-lg" href={'/energy'}>Energy</Link>
+                    <Link className="bg-white hover:bg-gray-200 w-25 p-1 text-center rounded-lg" href={'/charging'}>Charging</Link>
+                    <Link className="bg-white hover:bg-gray-200 w-25 p-1 text-center rounded-lg" href={'/discover'}>Discover</Link>
+                    <Link className="bg-white hover:bg-gray-200 w-18 p-1 text-center rounded-lg" href={'/shop'}>Shop</Link>
                 </div>
                 <div className="flex gap-5 items-center">
                     <Link href={'/'}>
